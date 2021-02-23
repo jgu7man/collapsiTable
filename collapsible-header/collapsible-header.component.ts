@@ -12,7 +12,11 @@ export class CollapsibleHeaderComponent implements OnInit {
   constructor(public service: CollapsibleTableService) { }
 
   ngOnInit() {
-    // (function(){ $('.collapsible').collapsible(); });
+  }
+
+  getThumnail( prop ) {
+    console.log(prop)
+    return prop['url'] ? prop['url'] : prop
   }
 
 

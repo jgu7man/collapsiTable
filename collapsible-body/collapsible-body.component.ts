@@ -21,10 +21,12 @@ export class CollapsibleBodyComponent implements OnInit {
   
 
   ngOnInit() {
-    // (function () { $('.collapsible').collapsible(); });
     this._item.subscribe(item =>{this.sortAttr(item)})
   }
 
+  getImage(prop) {
+    return prop['url'] ? prop['url'] : prop
+  }
 
 
   sortAttr(item) {

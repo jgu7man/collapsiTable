@@ -100,7 +100,7 @@ export interface Column {
     key: string
     name: string
     colspan: number
-    type: 'string' | 'image' | 'boolean'
+    type: 'string' | 'image' | 'boolean' | 'array'
 }
 
 
